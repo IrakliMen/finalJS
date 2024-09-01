@@ -12,7 +12,7 @@ header {
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
-    background-color: #1d676b;
+    background-color: #C46A2B;
     padding: 16px 94px;
     justify-content: space-between;
     align-items: center;
@@ -70,14 +70,16 @@ header, .header_ul, .header_icons {
     cursor: pointer;
     scale: 1.1;
 }
+.darkMode {
+    font-size: 40px;
+    color: #05BCCA;
+}
 
 /* section2 (cover) */
 .cover{
     margin-top: 96px;
     height: 560px;
     position: relative;
-    display: flex;
-    
     display: flex;
     justify-content: center;
 }
@@ -91,6 +93,7 @@ header, .header_ul, .header_icons {
 }
 .button {
     width: 100%;
+    padding: 0px 20px;
     position: absolute;
     display: flex;
     justify-content: space-between;
@@ -99,9 +102,16 @@ header, .header_ul, .header_icons {
 }
 .butCover {
     border: none;
-    height: 80px;
-    width: 40px;
+    height: 140px;
+    width: 60px;
     background-color: #C46A2B;
+    opacity: 0.7;
+}
+.butCover:hover {
+    scale: 1.1;
+    cursor: pointer;
+    opacity: 1;
+    border-radius: 5px;
 }
 .arrow {
     background-color: #C46A2B;
@@ -109,27 +119,17 @@ header, .header_ul, .header_icons {
     height: 100%;
     width: 100%;
 }
-.butCover:hover {
-    scale: 1.1;
-    cursor: pointer;
-}
+
 .cover_title {
-    display: flex;
-    column-gap: 20px;
     height: 36px;
-    align-items: center;
     margin-top: 72px;
     position: absolute;
-    
 }
-.title_text, .span_cover {
+.title_text {
     font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-size: 32px;
+    font-weight: 700;
+    font-size: 34px;
     line-height: 36px;
-    color: #ffffff;
-}
-.span_cover {
     color: #05BCCA;
 }
 
