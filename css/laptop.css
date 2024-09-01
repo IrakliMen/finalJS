@@ -1,0 +1,83 @@
+/* 1439px-769px */
+@media (max-width: 1238px) {
+    footer {
+        padding-inline: 98px;
+    }
+}
+@media (max-width: 1025px) {
+
+    /* header  */
+    header {
+        padding-inline: 45px;
+    }
+
+    .nav_header {
+        position: fixed;
+        top: 96px;
+        left: -100%;
+        background-color: #05BCCA;
+        width: 200px;
+        padding: 16px;
+        transition: .5s linear;
+    }
+
+    .header_ul {
+        flex-direction: column;
+        row-gap: 8px;
+    }
+
+    .header_li a {
+        color: #C46A2B;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .show {
+        left: 0;
+    }
+    /* section3 (products) */
+    .products {
+        padding: 96px 0 96px 45px;
+    }
+    /* footer */
+    footer {
+        padding-inline: 98px;
+    }
+    /* catalog (main section) */
+    .catalog {
+        padding-inline: 45px;
+    }
+    .grid_container {
+        grid-template-columns: repeat(2 1fr);
+        grid-template-areas: "photo1 photo2"
+            "photo3 photo4"
+            "photo5 photo6"
+            "photo7 photo8"
+            "photo9 photo10"
+            "photo11 photo12";
+    }
+
+    .guitar13,
+    .guitar14,
+    .guitar15,
+    .guitar16 {
+        display: none;
+    }
+
+    /* section 1(contact cover) */
+    .contact {
+        padding-inline: 45px;
+    }
+}
+@media (max-width: 997px) {
+    footer {
+        padding-inline: 32px;
+    }
+}
+@media (max-width: 866px) {
+    .footer_container {
+        justify-content: space-between;
+    }
+}
