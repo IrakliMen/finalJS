@@ -75,14 +75,43 @@ header, .header_ul, .header_icons {
 .cover{
     margin-top: 96px;
     height: 560px;
-    background-image: url(../img/Rectangle\ 12.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    position: relative;
     display: flex;
-    object-fit: cover;
+    
     display: flex;
     justify-content: center;
+}
+.slider {
+    width: 100%;
+    display: none;
+    object-fit: cover;
+}
+.visible {
+    display: block;
+}
+.button {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.butCover {
+    border: none;
+    height: 80px;
+    width: 40px;
+    background-color: #C46A2B;
+}
+.arrow {
+    background-color: #C46A2B;
+    color: #C46A2B;;
+    height: 100%;
+    width: 100%;
+}
+.butCover:hover {
+    scale: 1.1;
+    cursor: pointer;
 }
 .cover_title {
     display: flex;
@@ -90,6 +119,8 @@ header, .header_ul, .header_icons {
     height: 36px;
     align-items: center;
     margin-top: 72px;
+    position: absolute;
+    
 }
 .title_text, .span_cover {
     font-family: "Inter", sans-serif;
@@ -101,13 +132,7 @@ header, .header_ul, .header_icons {
 .span_cover {
     color: #05BCCA;
 }
-.arrow {
-    width: 36px;
-    height: 24px;
-}
-.arrow:hover {
-    scale: 1.1;
-}
+
 /* section3 (products) */
 .products {
     padding: 96px 0 96px 94px;
@@ -230,7 +255,6 @@ i:hover {
 }
 /* catalog (main section) */
 .catalog {
-    margin-top: 96px;
     background-color: #012426;
     border-top: 2px solid #05BCCA;
     padding: 96px 94px;
@@ -430,7 +454,6 @@ h5 {
 }
 /* section 1(contact cover) */
 .contact {
-    margin-top: 96px;
     height: 720px;
     background-image: url(../img/Rectangle\ 7.png);
     background-repeat: no-repeat;
