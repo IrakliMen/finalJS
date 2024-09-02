@@ -41,6 +41,9 @@
     .email, .phone_number {
         display: none;
     }
+    .cover {
+        height: 450px;
+    }
     .info_container {
         column-gap: 24px;
         align-items: center;
@@ -57,6 +60,17 @@
     .contact_title {
         font-size: 16px;
         line-height: 24px;
+    }
+}
+@media (max-width: 576px) {
+    /* section 1(contact cover) */
+    .filters {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+    .searchInput, select {
+        width: 260px;
     }
 }
 @media (max-width: 481px) {

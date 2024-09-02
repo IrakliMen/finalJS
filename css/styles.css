@@ -282,13 +282,17 @@ h5 {
     line-height: 32px;
     color: #D9D9D9;
 }
+.searchInput, select {
+    width: 160px;
+    height: 30px;
+}
 .filter_logo:hover {
     scale: 1.1;
 }
 .sort, #sort, #search {
     column-gap: 28px;
 }
-#filter, #sort, #searchInput {
+#filter, #sort, .searchInput {
     padding: 4px 8px;
     border: none;
     font-weight: 400;
@@ -304,6 +308,9 @@ h5 {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+}
+#searchInput {
+    display: none;
 }
 /* cards */
 .card_container {
@@ -339,6 +346,7 @@ h5 {
     line-height: 24px;
     color: #D9D9D9;
 }
+
 /* section 1(contact cover) */
 .contact {
     height: 720px;
