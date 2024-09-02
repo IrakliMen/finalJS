@@ -44,6 +44,10 @@
     .cover {
         height: 450px;
     }
+    .butCover {
+        height: 100px;
+        width: 40px;
+    }
     .info_container {
         column-gap: 24px;
         align-items: center;
