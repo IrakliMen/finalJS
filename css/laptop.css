@@ -71,14 +71,6 @@
         padding-inline: 45px;
     }
 }
-@media (max-width: 1070px) {
-    h5, .searchInput {
-        display: none;
-    }
-    #searchInput {
-        display: block;
-    }
-}
 @media (max-width: 997px) {
     footer {
         padding-inline: 32px;

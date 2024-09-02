@@ -114,3 +114,14 @@ sort.addEventListener("change", async (e) => {
   createCards(products);
 });
 
+//search
+const search = document.getElementById("searchInput");
+search.addEventListener("input", async (e) => {
+  const products = await getProducts();
+  const filtered = products.filter((product) =>
+    product.title.toLowerCase().includes(e.target.value.toLowerCase())
+  );
+  container.innerHTML = "";
+  createCards(filtered);
+});
+
