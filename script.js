@@ -51,3 +51,27 @@ left.addEventListener("click", () => {
   visible(activeIndex);
 });
 
+//cards
+const container = document.querySelector(".card_container");
+const getProducts = async () => {
+  let response = await fetch("https://fakestoreapi.com/products");
+  let products = await response.json();
+  for (let product of products) {
+    let card = document.createElement("div");
+    card.classList.add("card");
+    let cardImg = document.createElement("img");
+    cardImg.src = product.image;
+    cardImg.classList.add("imgCard");
+    let title = document.createElement("p");
+    title.classList.add("p_midlle")
+    title.textContent = product.title;
+    let price = document.createElement("p");
+    price.textContent = product.price + "$";
+    price.classList.add("p_midlle")
+    card.append(cardImg, title, price)
+    container.appendChild(card);
+  }
+  
+};
+getProducts();
+
