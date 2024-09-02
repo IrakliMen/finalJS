@@ -119,15 +119,22 @@
         <section class="catalog" id="catalogId">
             <div class="catalog_main_cont">
                 <div class="filters">
-                    <div class="filter">
-                        <h5 class="catalog_title">Filter</h5>
-                        <a href="">
-                            <img src="img/mingcute_filter-2-fill.svg" alt="" class="filter_logo">
-                        </a>
+                    <div id="search">
+                        <h5>Search:</h5>
+                        <input type="text" id="searchInput">
                     </div>
                     <div class="sort">
+                        <h5 class="catalog_title">Sort by:</h5>
+                        <select name="sort" id="sort">
+                            <option value="">Price</option>
+                            <option value="asc">Ascending</option>
+                            <option value="desc">Descending</option>
+                        </select>
+                    </div>
+                    
+                    <div class="sort">
                         <h5>Filter by:</h5>
-                        <select name="" id="filter">
+                        <select name="filter" id="filter">
                             <option value="all">Category</option>
                             <option value="jewelery">Jewelery</option>
                             <option value="men's clothing">Men's Clothing</option>

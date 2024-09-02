@@ -262,15 +262,15 @@ i:hover {
 .filters {
     margin-bottom: 64px;
 }
-.filters, .filter, .sort {
+.filters, #filter, .sort, #sort, #search {
     display: flex;
     justify-content: space-between;
     align-items: start;
 }
-.filter, .sort {
+#filter, .sort, #sort, #search {
     align-items: center;
 }
-.filter {
+#filter {
     column-gap: 13px;
 }
 h5, .select {
@@ -285,10 +285,10 @@ h5 {
 .filter_logo:hover {
     scale: 1.1;
 }
-.sort {
+.sort, #sort, #search {
     column-gap: 28px;
 }
-#filter {
+#filter, #sort, #searchInput {
     padding: 4px 8px;
     border: none;
     font-weight: 400;

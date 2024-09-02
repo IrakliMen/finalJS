@@ -62,7 +62,6 @@ const getProducts = async () => {
 
 const createCards = async (productList) => {
   for (let product of productList) {
-    console.log(product);
     let card = document.createElement("div");
     card.classList.add("card");
     let cardImg = document.createElement("img");
@@ -86,24 +85,32 @@ const renderCards = async () => {
 };
 renderCards();
 
-//sort
-const sort = document.getElementById("filter");
-sort.addEventListener("change", async (e) => {
+//filter
+const filter = document.getElementById("filter");
+filter.addEventListener("change", async (e) => {
   const products = await getProducts();
-  console.log(products);
   const filteredProducts = products.filter((product) => product.category === e.target.value);
-  console.log(filteredProducts);
   container.innerHTML = "";
   if (e.target.value === "all") {
-    // If "All" is selected, render all products
     createCards(products);
   } else {
-    // Otherwise, filter by category
     const filteredProducts = products.filter(
       (product) => product.category === e.target.value
     );
     createCards(filteredProducts);
   }
-  createCards(filteredProducts);
+});
+
+//sort
+const sort = document.getElementById("sort");
+sort.addEventListener("change", async (e) => {
+  const products = await getProducts();
+  if (e.target.value === "asc"){
+    products.sort((a, b) => a.price - b.price);
+  }else if(e.target.value === "desc"){
+    products.sort((a, b) => b.price - a.price);
+  }
+  container.innerHTML = "";
+  createCards(products);
 });
 
