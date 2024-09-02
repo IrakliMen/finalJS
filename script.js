@@ -68,7 +68,7 @@ const createCards = async (productList) => {
     cardImg.src = product.image;
     cardImg.classList.add("imgCard");
     let title = document.createElement("p");
-    title.classList.add("p_midlle")
+    title.classList.add("titleCard")
     title.textContent = product.title;
     let price = document.createElement("p");
     price.textContent = product.price + "$";
