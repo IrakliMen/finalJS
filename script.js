@@ -53,10 +53,16 @@ left.addEventListener("click", () => {
 
 //cards
 const container = document.querySelector(".card_container");
+
 const getProducts = async () => {
-  let response = await fetch("https://fakestoreapi.com/products");
-  let products = await response.json();
-  for (let product of products) {
+  const response = await fetch("https://fakestoreapi.com/products");
+  const result = await response.json();
+  return result;
+};
+
+const createCards = async (productList) => {
+  for (let product of productList) {
+    console.log(product);
     let card = document.createElement("div");
     card.classList.add("card");
     let cardImg = document.createElement("img");
@@ -71,7 +77,33 @@ const getProducts = async () => {
     card.append(cardImg, title, price)
     container.appendChild(card);
   }
-  
+  createCards();
+
 };
-getProducts();
+const renderCards = async () => {
+  const products = await getProducts();
+  createCards(products);
+};
+renderCards();
+
+//sort
+const sort = document.getElementById("filter");
+sort.addEventListener("change", async (e) => {
+  const products = await getProducts();
+  console.log(products);
+  const filteredProducts = products.filter((product) => product.category === e.target.value);
+  console.log(filteredProducts);
+  container.innerHTML = "";
+  if (e.target.value === "all") {
+    // If "All" is selected, render all products
+    createCards(products);
+  } else {
+    // Otherwise, filter by category
+    const filteredProducts = products.filter(
+      (product) => product.category === e.target.value
+    );
+    createCards(filteredProducts);
+  }
+  createCards(filteredProducts);
+});
 
