@@ -174,10 +174,12 @@ header, .header_ul, .header_icons {
     flex-direction: column;
     row-gap: 16px;
     border: 1px solid #05BCCA;
+    transition: border-radius 0.5s ease, box-shadow 0.5s ease;
 }
 .card123:hover {
     box-shadow: 0 0 8px 4px #05bccacc;
     cursor: pointer;
+    border-radius: 20px;
 }
 .card_img {
     width: 100%px;
@@ -267,6 +269,9 @@ i:hover {
     display: flex;
     justify-content: space-between;
     align-items: start;
+}
+#sort:hover, #filter:hover {
+    cursor: pointer;
 }
 #filter, .sort, #sort, #search {
     align-items: center;
