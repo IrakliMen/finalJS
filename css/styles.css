@@ -382,7 +382,7 @@ h5 {
     line-height: 32px;
     color: #FFFFFF;
 }
-.contact_title, .email, .phone_number {
+.contact_title, .emaill, .phone_number {
     font-family: "Inter", sans-serif;
 }
 .info_container {
@@ -401,7 +401,7 @@ h5 {
     align-items: center;
     column-gap: 12px;
 }
-.email, .phone_number {
+.emaill, .phone_number {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -423,7 +423,12 @@ form {
 .input_box {
     height: 30px;
 }
-#name, #email {
+#name {
+    height: 32px;
+    border: none;
+    width: 100%;
+}
+.eemail, .nname{
     height: 32px;
     border: none;
     width: 100%;
@@ -434,12 +439,12 @@ textarea {
     width: 100%;
     margin-block: 16px 24px;
 }
-#name, #email, textarea {
+.nname, .eemail, textarea {
     padding: 6px 8px;
     border: none;
     background-color: #2C4246;
 }
-#name::placeholder, #email::placeholder, textarea::placeholder {
+.nname::placeholder, .eemail::placeholder, textarea::placeholder {
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 12px;
@@ -468,6 +473,7 @@ iframe {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+    border-radius: 7px;
 }
 .submit_btn:hover {
     scale: 1.01;
@@ -476,6 +482,15 @@ iframe {
 }
 .icon_contact {
     color: #05BCCA;
+}
+
+.invalid {
+    border: 2px solid #c60001;
+    border-radius: 3px;
+}
+.valid {
+    border: 2px solid #009400;
+    border-radius: 3px;
 }
 .darkMode {
     background-color: #000000;

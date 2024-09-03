@@ -38,7 +38,7 @@
 }
 @media (max-width: 659px) {
     /* section 1(contact cover) */
-    .email, .phone_number {
+    .emaill, .phone_number {
         display: none;
     }
     .cover {

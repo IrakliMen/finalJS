@@ -144,6 +144,35 @@ darkMode.addEventListener("click", () => {
 });
 
 
+//validation inputs
+const patterns = {
+  name: /^[a-z\d]{5,12}$/i,
+  email: /(^[a-z\d,-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/,
+};
+
+const inputs = document.querySelectorAll("input");
+
+function validation(field, regex) {
+  if (regex.test(field.value)) {
+    field.classList.add("valid");
+    field.classList.remove("invalid");
+  } else {
+    field.classList.add("invalid");
+    field.classList.remove("valid");
+  }
+}
+
+for (let input of inputs) {
+  input.addEventListener("keyup", (e) => {
+    const name = e.target.name;
+    if (patterns[name]) {
+      validation(e.target, patterns[name]);
+    }
+  });
+};
+
+
+
 
 
 
