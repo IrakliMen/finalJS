@@ -12,7 +12,7 @@ header {
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
-    background-color: #C46A2B;
+    background-color: #232f3e;
     padding: 16px 94px;
     justify-content: space-between;
     align-items: center;
@@ -136,7 +136,7 @@ header, .header_ul, .header_icons {
 /* section3 (products) */
 .products {
     padding: 96px 0 96px 94px;
-    background-color: #1A1A1A;
+    background-color: #727982;
     text-align: center;
 }
 
@@ -210,7 +210,7 @@ header, .header_ul, .header_icons {
 /* footer */
 footer {
     display: flex;
-    background-color: #2C4246;
+    background-color: #58627c;
     padding: 48px 300px;
     justify-content: space-between;
     align-items: start;
@@ -255,7 +255,7 @@ i:hover {
 }
 /* catalog (main section) */
 .catalog {
-    background-color: #012426;
+    background-color: #58627c;
     border-top: 2px solid #05BCCA;
     padding: 96px 94px;
 }
@@ -359,7 +359,7 @@ h5 {
 /* section 1(contact cover) */
 .contact {
     height: 720px;
-    background-image: url(../img/Rectangle\ 7.png);
+    background-color: #727982;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
