@@ -3,8 +3,9 @@
     width: min(100%, 1440px);
     margin: auto;
 }
+
 /* header */
-header {
+.header {
     max-width: inherit;
     width: inherit;
     position: fixed;
@@ -70,7 +71,7 @@ header, .header_ul, .header_icons {
     cursor: pointer;
     scale: 1.1;
 }
-.darkMode {
+#darkModeIcon {
     font-size: 36px;
     color: #05BCCA;
 }
@@ -208,7 +209,7 @@ header, .header_ul, .header_icons {
     color: #05BCCA;
 }
 /* footer */
-footer {
+.footer {
     display: flex;
     background-color: #58627c;
     padding: 48px 300px;
@@ -476,3 +477,7 @@ iframe {
 .icon_contact {
     color: #05BCCA;
 }
+.darkMode {
+    background-color: #000000;
+}
+

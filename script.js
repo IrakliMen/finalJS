@@ -125,3 +125,25 @@ search.addEventListener("input", async (e) => {
   createCards(filtered);
 });
 
+//dark mode
+const darkMode = document.getElementById("darkModeIcon");
+const header = document.getElementById("header");
+const section1 = document.getElementById("products");
+const section2 = document.getElementById("catalogId");
+const section3 = document.getElementById("contactId");
+const footer = document.getElementById("footer");
+
+
+
+darkMode.addEventListener("click", () => {
+  header.classList.toggle("darkMode");
+  section1.classList.toggle("darkMode");
+  section2.classList.toggle("darkMode");
+  section3.classList.toggle("darkMode");
+  footer.classList.toggle("darkMode");
+});
+
+
+
+
+
